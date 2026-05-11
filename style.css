@@ -1,0 +1,228 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#0f0f0f;
+color:white;
+}
+
+/* navbar */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 80px;
+background:black;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#ff3c3c;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin:0 15px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ff3c3c;
+}
+
+/* hero */
+
+.hero{
+height:90vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url("https://images.unsplash.com/photo-1583454110551-21f2fa2afe61");
+background-size:cover;
+}
+
+.hero h1{
+font-size:60px;
+color:#ff3c3c;
+}
+
+.hero p{
+margin:15px 0;
+font-size:18px;
+}
+
+.btn{
+padding:12px 30px;
+background:#ff3c3c;
+border:none;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+}
+
+/* services */
+
+.services{
+padding:80px 40px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:#1c1c1c;
+padding:30px;
+width:260px;
+border-radius:10px;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:#ff3c3c;
+}
+
+/* pricing */
+
+.pricing{
+padding:80px;
+text-align:center;
+background:#0f0f0f;
+}
+
+.price-cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.price{
+background:#1c1c1c;
+padding:30px;
+width:250px;
+border-radius:10px;
+transition:.3s;
+}
+
+.price:hover{
+transform:scale(1.05);
+background:#ff3c3c;
+}
+
+/* bmi */
+
+.bmi{
+padding:80px;
+text-align:center;
+}
+
+.bmi input{
+padding:10px;
+margin:10px;
+}
+
+/* gallery */
+
+.gallery{
+padding:80px;
+text-align:center;
+}
+
+.images{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+margin-top:30px;
+}
+
+.images img{
+width:300px;
+border-radius:10px;
+transition:.4s;
+}
+
+.images img:hover{
+transform:scale(1.1);
+}
+
+/* form */
+
+.form{
+padding:80px;
+text-align:center;
+background:#111;
+}
+
+.form input{
+padding:12px;
+margin:10px;
+width:250px;
+}
+
+.form button{
+padding:12px 30px;
+background:#ff3c3c;
+border:none;
+color:white;
+}
+
+/* contact */
+
+.contact{
+padding:80px;
+text-align:center;
+}
+
+/* whatsapp */
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* footer */
+
+footer{
+background:black;
+padding:20px;
+text-align:center;
+}
