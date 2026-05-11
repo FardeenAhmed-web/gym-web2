@@ -1,1 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PowerFit Gym</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>PowerFit</h2>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#pricing">Pricing</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>PowerFit Gym</h1>
+<p>Transform Your Body With Us</p>
+<button class="btn">Join Now</button>
+
+</section>
+
+
+<section id="services" class="services">
+
+<h2 data-aos="fade-up">Our Services</h2>
+
+<div class="cards">
+
+<div class="card" data-aos="fade-up">
+
+<h3>Weight Training</h3>
+<p>Modern machines for muscle building.</p>
+
+</div>
+
+<div class="card" data-aos="fade-up">
+
+<h3>Cardio Training</h3>
+<p>Best cardio equipment available.</p>
+
+</div>
+
+<div class="card" data-aos="fade-up">
+
+<h3>Personal Trainer</h3>
+<p>Certified trainers for your fitness.</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="pricing" class="pricing">
+
+<h2>Membership Plans</h2>
+
+<div class="price-cards">
+
+<div class="price">
+
+<h3>Basic</h3>
+<h2>₹999</h2>
+<p>Gym Access</p>
+<p>Cardio</p>
+<button>Join</button>
+
+</div>
+
+<div class="price">
+
+<h3>Standard</h3>
+<h2>₹1999</h2>
+<p>Gym + Cardio</p>
+<p>Trainer Support</p>
+<button>Join</button>
+
+</div>
+
+<div class="price">
+
+<h3>Premium</h3>
+<h2>₹2999</h2>
+<p>Personal Trainer</p>
+<p>Diet Plan</p>
+<button>Join</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="bmi">
+
+<h2>BMI Calculator</h2>
+
+<input type="number" id="height" placeholder="Height cm">
+<input type="number" id="weight" placeholder="Weight kg">
+
+<button onclick="calcBMI()">Calculate</button>
+
+<h3 id="result"></h3>
+
+</section>
+
+
+<section id="gallery" class="gallery">
+
+<h2>Gym Gallery</h2>
+
+<div class="images">
+
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+
+<img src="https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a">
+
+<img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50">
+
+</div>
+
+</section>
+
+
+<section class="form">
+
+<h2>Join Our Gym</h2>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Email">
+
+<input type="number" placeholder="Phone">
+
+<button>Submit</button>
+
+</section>
+
+
+<section id="contact" class="contact">
+
+<h2>Contact Us</h2>
+
+<p>📍 Delhi</p>
+
+<p>📞 +91 9876543210</p>
+
+</section>
+
+
+<a class="whatsapp" href="#">WhatsApp</a>
+
+<footer>
+
+<p>© 2026 PowerFit Gym</p>
+
+</footer>
+
+
+
+<script>
+
+function calcBMI(){
+
+let h = document.getElementById("height").value/100;
+
+let w = document.getElementById("weight").value;
+
+let bmi = w/(h*h);
+
+document.getElementById("result").innerText =
+"Your BMI: " + bmi.toFixed(2);
+
+}
+
+</script>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+
+AOS.init();
+
+</script>
+
+
+</body>
+
+</html>
